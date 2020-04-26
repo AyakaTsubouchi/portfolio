@@ -1,0 +1,63 @@
+@import './font-color.scss';
+
+.header {
+  display: flex;
+  padding-top: 10px;
+
+  .right {
+    text-align: right;
+  }
+  .btn {
+    border: none;
+    margin: 0;
+    background-color: none;
+  }
+  a,
+  li {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s;
+  }
+  a::before,
+  a::after,
+  li::before,
+  li::after {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 2;
+    content: '';
+    transition: all 0.3s;
+  }
+  a::before,
+  li::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+  }
+  a::after,
+  li::after {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    transform: scale(1, 0);
+  }
+  a:hover,
+  li:hover {
+    color: white;
+  }
+  a:hover::after,
+  a:hover::before,
+  li:hover::after,
+  li:hover::before {
+    transform: scale(1);
+  }
+}

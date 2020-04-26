@@ -1,0 +1,76 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+.header .right {
+  text-align: right;
+}
+
+.header .btn {
+  border: none;
+  margin: 0;
+  background-color: none;
+}
+
+.header a,
+.header li {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 3px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header a::before,
+.header a::after,
+.header li::before,
+.header li::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: 2;
+  content: '';
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header a::before,
+.header li::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.header a::after,
+.header li::after {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+}
+
+.header a:hover,
+.header li:hover {
+  color: white;
+}
+
+.header a:hover::after,
+.header a:hover::before,
+.header li:hover::after,
+.header li:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=header.css.map */
