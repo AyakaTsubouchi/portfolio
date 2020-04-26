@@ -27,4 +27,17 @@
   li {
     list-style: none;
   }
+  .about-card {
+    width: 100%;
+    text-align: left;
+  }
+  .bio-deader {
+    display: flex;
+  }
+  .name {
+    padding: 60px 0;
+  }
+  .horizontal-list ul {
+    display: flex;
+  }
 }

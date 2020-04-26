@@ -1,5 +1,6 @@
 import React from 'react';
 import { Consumer } from './Context';
+import AboutCard, { SkillCard } from './AboutCard';
 
 const jpnese =
   '初めまして,坪内文香と申します。フロントエンドディベロッパーです。大学卒業後、一般企業で経理&webサイト担当として合計６年間働いていましたが、30歳で一念発起しバンクーバーへ留学。そこでプログラミングを学び今に至ります。メンテナンスのしやすいサイト作りを心がけます。';
@@ -15,28 +16,19 @@ const About = () => {
             <h2>
               <span>About</span>
             </h2>
-            <p>Web Deisgner / Developer</p>
-            {isEnglish}
+            <p className="subtitle">who I am & what I did...</p>
             {isEnglish ? (
-              <p className="text">{eng}</p>
+              <AboutCard discription={eng} />
             ) : (
-              <p className="text">{jpnese}</p>
+              <AboutCard discription={jpnese} />
             )}
             <div className="about first-section">
               <h2>
                 <span>Skils</span>
               </h2>
+              <p className="subtitle">I'm learning constantly.</p>
               <div className="section">
-                <h3 className="section-title">languages</h3>
-                <p>Mainly writing TypeScript for React with VS Code.</p>
-                <ul>
-                  <li>HTML & CSS</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>GitHub</li>
-                  <li>Java:little bit</li>
-                  <li>Python:little bit</li>
-                </ul>
+                <SkillCard />
               </div>
             </div>
           </div>

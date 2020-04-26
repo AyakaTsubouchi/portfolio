@@ -27,4 +27,25 @@
 .section li {
   list-style: none;
 }
+
+.section .about-card {
+  width: 100%;
+  text-align: left;
+}
+
+.section .bio-deader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .name {
+  padding: 60px 0;
+}
+
+.section .horizontal-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=about.css.map */

@@ -104,6 +104,27 @@
   list-style: none;
 }
 
+.section .about-card {
+  width: 100%;
+  text-align: left;
+}
+
+.section .bio-deader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .name {
+  padding: 60px 0;
+}
+
+.section .horizontal-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section img {
   width: 60%;
 }
@@ -132,5 +153,13 @@
 .center {
   text-align: center;
   padding: 40vh 0;
+}
+
+.subtitle {
+  font-family: 'Patrick Hand', cursive;
+}
+
+h2 {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
