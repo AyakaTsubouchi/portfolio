@@ -9,7 +9,9 @@ const Landing = () => (
         <div className="center">
           <p>Web Deisgner / Developer</p>
           <h1>AYAKA TSUBOUCHI</h1>
-          <p>{isEnglish ? 'English' : 'Japanese'}</p>
+          <p className="subtitle">
+            {isEnglish ? 'Nice to meet you!' : 'よろしくおねがいします！'}
+          </p>
         </div>
       </div>
     )}

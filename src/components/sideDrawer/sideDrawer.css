@@ -1,0 +1,38 @@
+.side-drawer {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  text-align: center;
+  padding-top: 35vh;
+  transition: all 0.3s;
+  transform: translateX(100%);
+  color: black;
+}
+
+.side-drawer.open {
+  transform: translateX(0%);
+  width: 300px;
+}
+
+.side-drawer div {
+  margin: 30px;
+  font-size: 1.5em;
+}
+.side-drawer i {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .side-drawer {
+    display: none;
+  }
+}

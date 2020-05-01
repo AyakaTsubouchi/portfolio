@@ -1,0 +1,83 @@
+.toolbar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+.toolbar_navigation {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.toolbar_navigation-items ul {
+  display: flex;
+}
+.toolbar_navigation-items a {
+  color: white;
+  margin: 0 10px;
+}
+.toolbar_lang {
+  display: flex;
+  height: 100%;
+}
+.toolbar_lang li {
+  list-style: none;
+  margin: 0 10px;
+}
+.toolbar a,
+.toolbar li {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 2px 3px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s;
+}
+.toolbar a::before,
+.toolbar a::after,
+.toolbar li::before,
+.toolbar li::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+}
+.toolbar a::before,
+.toolbar li::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: scale(0, 1);
+}
+.toolbar a::after,
+.toolbar li::after {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  transform: scale(1, 0);
+}
+.toolbar a:hover,
+.toolbar li:hover {
+  color: white;
+}
+.toolbar a:hover::after,
+.toolbar a:hover::before,
+.toolbar li:hover::after,
+.toolbar li:hover::before {
+  transform: scale(1);
+}
+
+@media (max-width: 760px) {
+  .toolbar_navigation-items {
+    display: none;
+  }
+}
+@media (min-width: 760px) {
+  .toolbar i {
+    display: none;
+  }
+}

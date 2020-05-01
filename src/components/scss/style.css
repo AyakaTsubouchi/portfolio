@@ -1,82 +1,74 @@
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 10px;
+@-webkit-keyframes bg-anime {
+  0% {
+    background: #a798f3;
+  }
+  50% {
+    background: #e481dc;
+  }
+  100% {
+    background: #a798f3;
+  }
 }
 
-.header .right {
-  text-align: right;
+@keyframes bg-anime {
+  0% {
+    background: #a798f3;
+  }
+  50% {
+    background: #e481dc;
+  }
+  100% {
+    background: #a798f3;
+  }
 }
 
-.header .btn {
-  border: none;
+* {
   margin: 0;
-  background-color: none;
+  padding: 0;
 }
 
-.header a,
-.header li {
-  text-decoration: none;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.gradient {
+  background-image: linear-gradient(-45deg, #a798f3, #e481dc);
+  -webkit-animation: bg-anime 4s ease infinite;
+          animation: bg-anime 4s ease infinite;
+}
+
+.main h1 {
+  font-family: "Black Ops One", cursive;
+  margin: 0;
   color: white;
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  padding: 2px 3px;
+  font-size: 40px;
+}
+
+.main p {
+  margin: 0;
+  color: white;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+.center {
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  padding: 40vh 0;
 }
 
-.header a::before,
-.header a::after,
-.header li::before,
-.header li::after {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  z-index: 2;
-  content: '';
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.subtitle {
+  font-family: "Patrick Hand", cursive;
+  font-size: 20px;
 }
 
-.header a::before,
-.header li::before {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-}
-
-.header a::after,
-.header li::after {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-}
-
-.header a:hover,
-.header li:hover {
-  color: white;
-}
-
-.header a:hover::after,
-.header a:hover::before,
-.header li:hover::after,
-.header li:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.about {
-  background-color: white;
-  width: 100%;
+h2 {
+  margin-bottom: 0;
 }
 
 .first-section {
@@ -123,43 +115,5 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.section img {
-  width: 60%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.app {
-  background-image: linear-gradient(-45deg, #a798f3, #e481dc);
-}
-
-.main h1 {
-  font-family: 'Black Ops One', cursive;
-  margin: 0;
-  color: white;
-  font-size: 40px;
-}
-
-.main p {
-  margin: 0;
-  color: white;
-}
-
-.center {
-  text-align: center;
-  padding: 40vh 0;
-}
-
-.subtitle {
-  font-family: 'Patrick Hand', cursive;
-}
-
-h2 {
-  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
