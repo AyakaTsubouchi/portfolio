@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
-import { Provider } from "./components/Context";
-import { contextProvider } from "./components/Context2";
+import { Provider } from "./contexts/Context";
 
 ReactDOM.render(
   <Provider>
-    <contextProvider>
-      <App />
-    </contextProvider>
+    <App />
   </Provider>,
   document.getElementById("root")
 );

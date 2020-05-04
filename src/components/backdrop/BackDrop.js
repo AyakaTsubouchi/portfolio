@@ -1,6 +1,6 @@
 import React from "react";
 import "./backdrop.css";
-import { Consumer } from "../Context";
+import { Consumer } from "../../contexts/Context";
 
 export default function BackDrop() {
   return (

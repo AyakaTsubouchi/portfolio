@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Consumer } from "./Context";
+import { Consumer } from "../contexts/Context";
 import Landing from "./Landing";
 import Toolbar from "./Toolbar/Toolbar";
 import SideDrawer from "./sideDrawer/SideDrawer";

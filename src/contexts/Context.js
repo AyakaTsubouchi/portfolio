@@ -7,50 +7,35 @@ export class Provider extends React.Component {
     isEnglish: true,
     isDark: true, //in this time, I don't use it
     isOpen: false,
-    toJapanese: this.toJapanese,
-    toEnglish: this.toEnglish,
-    openNav: this.openNav,
-    closeNav: this.closeNav,
   };
-  constructor() {
-    super();
-    this.toEnglish = this.toEnglish.bind(this);
-    this.toJapanese = this.toJapanese.bind(this);
-    this.openNav = this.openNav.bind(this);
-    this.closeNav = this.closeNav.bind(this);
-  }
 
-  toEnglish() {
-    console.log(this.state.isEnglish);
+  toEnglish = () => {
     this.setState({
       isEnglish: true,
     });
-  }
-  toJapanese() {
-    console.log(this.state.isEnglish);
+  };
+  toJapanese = () => {
     this.setState({
       isEnglish: false,
     });
-  }
-  openNav() {
+  };
+  openNav = () => {
     this.setState({
       isOpen: true,
     });
-  }
-  closeNav() {
+  };
+  closeNav = () => {
     this.setState({
       isOpen: false,
     });
-  }
+  };
 
-  render() {
+  render = () => {
     return (
       <>
         <Context.Provider
           value={{
-            isEnglish: this.state.isEnglish,
-            isDark: this.state.isDark,
-            isOpen: this.state.isOpen,
+            ...this.state,
             toJapanese: this.toJapanese,
             toEnglish: this.toEnglish,
             openNav: this.openNav,
@@ -60,7 +45,7 @@ export class Provider extends React.Component {
         </Context.Provider>
       </>
     );
-  }
+  };
 }
 
 export const Consumer = Context.Consumer;

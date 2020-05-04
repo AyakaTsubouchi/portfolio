@@ -14,12 +14,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%; //may not need it
-}
-body {
-  height: 100%; //may not need it
-}
 
 .gradient {
   background-image: linear-gradient(
@@ -69,14 +63,14 @@ h2 {
   margin-top: 30px;
 
   span {
-    color: #acb6e5; //非対応のブラウザでの文字色を設定
+    color: #acb6e5;
     background: -webkit-linear-gradient(
       -45deg,
       rgb(167, 152, 243),
       rgb(228, 129, 220)
-    ); //背景色にグラデーションを指定
-    background-clip: text; //テキストでくり抜く
-    -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .text {
     text-align: left;

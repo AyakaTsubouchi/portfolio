@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sideDrawer.css";
-import { Consumer } from "../Context";
+import { Consumer } from "../../contexts/Context";
 
 const SideDrawer = (props) => {
   let navClass = "side-drawer";

@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { Consumer } from './Context';
+import { Consumer } from "../contexts/Context";
 
 const Landing = () => (
   <Consumer>
-    {({ isEnglish, isDark }) => (
+    {({ isEnglish }) => (
       <div className="main">
         <div className="center">
           <p>Web Deisgner / Developer</p>
           <h1>AYAKA TSUBOUCHI</h1>
           <p className="subtitle">
-            {isEnglish ? 'Nice to meet you!' : 'よろしくおねがいします！'}
+            {isEnglish ? "Nice to meet you!" : "よろしくおねがいします！"}
           </p>
         </div>
       </div>

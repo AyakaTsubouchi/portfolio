@@ -1,7 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./toolbar.css";
-import { Consumer, Context } from "../Context";
+import { Context } from "../../contexts/Context";
 
 const Toolbar = (props) => {
   const { toJapanese, toEnglish, openNav } = useContext(Context);
