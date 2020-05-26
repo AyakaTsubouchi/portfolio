@@ -16,25 +16,25 @@ const SideDrawer = (props) => {
           <div className={navClass}>
             <ul>
               <div>
-                <Link to="/" onClick={closeNav}>
+                <Link to="/portfolio" onClick={closeNav}>
                   Home
                 </Link>
               </div>
 
               <div>
-                <Link to="/works" onClick={closeNav}>
+                <Link to="/portfolio/works" onClick={closeNav}>
                   Works
                 </Link>
               </div>
 
               <div>
-                <Link to="/about" onClick={closeNav}>
+                <Link to="/portfolio/about" onClick={closeNav}>
                   About
                 </Link>
               </div>
 
               <div>
-                <Link to="/contact" onClick={closeNav}>
+                <Link to="/portfolio/contact" onClick={closeNav}>
                   Contact
                 </Link>
               </div>

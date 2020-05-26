@@ -21,10 +21,10 @@ const App = () => (
               <SideDrawer isOpen={isOpen} />
               <Backdrop />
               <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/about" component={About} />
-                <Route path="/works" component={Works} />
-                <Route path="/contact" component={Contact} />
+                <Route exact path="/portfolio" component={Landing} />
+                <Route path="/portfolio/about" component={About} />
+                <Route path="/portfolio/works" component={Works} />
+                <Route path="/portfolio/contact" component={Contact} />
               </Switch>
             </>
           )}

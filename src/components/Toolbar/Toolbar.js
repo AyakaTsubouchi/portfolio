@@ -20,10 +20,10 @@ const Toolbar = (props) => {
         <i className="bars icon" onClick={openNav}></i>
         <div className="toolbar_navigation-items">
           <ul>
-            <Link to="/">Home</Link>
-            <Link to="/works">Works</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/portfolio">Home</Link>
+            <Link to="/portfolio/works">Works</Link>
+            <Link to="/portfolio/about">About</Link>
+            <Link to="/portfolio/contact">Contact</Link>
           </ul>
         </div>
       </nav>
