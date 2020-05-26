@@ -1,24 +1,24 @@
 @-webkit-keyframes bg-anime {
   0% {
-    background: #a798f3;
+    background: #08bfec;
   }
   50% {
     background: #e481dc;
   }
   100% {
-    background: #a798f3;
+    background: #08bfec;
   }
 }
 
 @keyframes bg-anime {
   0% {
-    background: #a798f3;
+    background: #08bfec;
   }
   50% {
     background: #e481dc;
   }
   100% {
-    background: #a798f3;
+    background: #08bfec;
   }
 }
 
@@ -28,9 +28,9 @@
 }
 
 .gradient {
-  background-image: linear-gradient(-45deg, #a798f3, #e481dc);
-  -webkit-animation: bg-anime 4s ease infinite;
-          animation: bg-anime 4s ease infinite;
+  background-image: linear-gradient(-45deg, #e481dc, #08bfec);
+  -webkit-animation: bg-anime 10s ease infinite;
+          animation: bg-anime 10s ease infinite;
 }
 
 .main h1 {
@@ -75,7 +75,7 @@ h2 {
 
 .section span {
   color: #acb6e5;
-  background: -webkit-linear-gradient(-45deg, #a798f3, #e481dc);
+  background: -webkit-linear-gradient(-45deg, #08bfec, #e481dc);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

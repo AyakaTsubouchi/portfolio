@@ -13,7 +13,7 @@ const Landing = () => (
             {isEnglish ? "Nice to meet you!" : "よろしくおねがいします！"}
           </p>
         </div>
-      </div>
+        </div>
     )}
   </Consumer>
 );
