@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   color: white;
+  font-size: 19px;
 }
 .toolbar_navigation-items ul {
   display: flex;
